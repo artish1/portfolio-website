@@ -235,17 +235,18 @@ header .shadow-box .center-container .main-info h2 {
 header .shadow-box .center-container .main-info a {
   margin-top: 30px;
   text-decoration: none;
-  color: white;
+  color: #f4f4ea;
   width: 300px;
   height: 50px;
-  border: 2px solid white;
+  border: 2px solid #e6f51e;
   border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.15s ease;
 }
 header .shadow-box .center-container .main-info a:hover {
-  background-color: white;
+  background-color: #e6f51e;
   color: #111111;
 }
 .line-container {
@@ -302,7 +303,7 @@ header .shadow-box .center-container .main-info a:hover {
 .info-container .box {
   width: 45%;
   background-color: #292929;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,12 +313,10 @@ header .shadow-box .center-container .main-info a:hover {
   margin-bottom: 15px;
 }
 .info-container .skills ul {
-  margin-right: 20px;
-  margin-left: 20px;
   display: flex;
-  width: 100%;
+  width: 94%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .info-container .skills ul li {
   width: 100px;
@@ -325,6 +324,13 @@ header .shadow-box .center-container .main-info a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.info-container .skills ul li p {
+  margin-top: 10px;
+  font-size: 18px;
 }
 .contact {
   margin-left: 15px;
