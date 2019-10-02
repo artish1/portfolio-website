@@ -18,6 +18,10 @@ body {
 
 .max-width {
   margin: 0px 78px;
+
+  @media @tablet {
+    margin: 0px 55px;
+  }
 }
 
 header {
@@ -148,6 +152,10 @@ header {
     .mission-statement {
       width: 750px;
       margin-bottom: 50px;
+
+      @media @tablet {
+        width: 100%;
+      }
     }
   }
 }
@@ -176,6 +184,12 @@ header {
       margin-top: 25px;
       margin-bottom: 15px;
     }
+
+    @media @tablet {
+      width: 100%;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
   }
 
   .skills {
@@ -200,6 +214,11 @@ header {
         }
       }
     }
+  }
+
+  @media @tablet {
+    flex-direction: column;
+    min-width: initial;
   }
 }
 
@@ -230,5 +249,9 @@ header {
   .sub-text {
     font-size: 25px;
     margin-bottom: 25px;
+  }
+
+  @media @tablet {
+    margin-left: 0px;
   }
 }
