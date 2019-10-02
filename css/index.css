@@ -127,13 +127,6 @@ table {
   border-spacing: 0;
 }
 @font-face {
-  font-family: 'Comfortaa';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/comfortaa/v25/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJQ.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -143,31 +136,28 @@ table {
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quicksand/v15/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-xw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
   font-weight: 600;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/quicksand/v15/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkCEv58a-xw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Josefin Sans Thin'), local('JosefinSans-Thin'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3EZQNVED7rKGKxtqIqX5Ecbkx6XH0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
 }
 /*
 FONTS-----
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Comfortaa', cursive;
-
+CURRENTLY NOT IN USE:
+-Raleway:300
 */
 body {
   background-color: #111111;
@@ -221,12 +211,18 @@ header .shadow-box .center-container .main-info {
   flex-direction: column;
   align-items: center;
 }
-header .shadow-box .center-container .main-info .welcome {
-  font-size: 35px;
-  margin-bottom: 30px;
+header .shadow-box .center-container .main-info .sub-title {
+  font-size: 25px;
+  margin-top: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  letter-spacing: 6px;
 }
 header .shadow-box .center-container .main-info h2 {
-  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+  letter-spacing: 10px;
 }
 header .shadow-box .center-container .main-info a {
   margin-top: 30px;
