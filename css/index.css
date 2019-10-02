@@ -302,6 +302,7 @@ header .shadow-box .center-container .main-info a:hover {
 .info-container .box {
   width: 45%;
   background-color: #292929;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,6 +310,21 @@ header .shadow-box .center-container .main-info a:hover {
 .info-container .box h3 {
   margin-top: 25px;
   margin-bottom: 15px;
+}
+.info-container .skills ul {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info-container .skills ul li {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .contact {
   margin-left: 15px;
