@@ -159,6 +159,14 @@ FONTS-----
 CURRENTLY NOT IN USE:
 -Raleway:300
 */
+@keyframes scrollAnim {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 body {
   background-color: #111111;
   font-family: 'Montserrat', sans-serif;
@@ -239,4 +247,24 @@ header .shadow-box .center-container .main-info a {
 header .shadow-box .center-container .main-info a:hover {
   background-color: white;
   color: #111111;
+}
+.line-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.line-wrapper {
+  height: 70px;
+  width: 1px;
+  align-self: center;
+  overflow: hidden;
+  position: absolute;
+  top: -35px;
+}
+.line-wrapper .line {
+  background-color: white;
+  width: 1px;
+  height: 70px;
+  animation: scrollAnim 2s infinite;
 }

@@ -114,7 +114,27 @@ header {
 }
 
 
+.line-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
 
 .line-wrapper {
+    height: @scroll-line-height;
+    width: 1px;
+    align-self: center;
+    overflow: hidden;
 
+    position: absolute;
+    top: -35px;
+
+    .line {
+        background-color: white;
+        width: 1px;
+        height: @scroll-line-height;
+        animation: scrollAnim @scroll-line-duration infinite;
+        
+    }
 }
