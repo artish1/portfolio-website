@@ -307,15 +307,15 @@ header .shadow-box .center-container .main-info a:hover {
   align-items: center;
 }
 .info-container .box h3 {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 15px;
 }
 .contact {
   margin-left: 15px;
 }
 .contact .profile-picture {
-  margin-top: 5px;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  margin-bottom: 75px;
   border-radius: 100px;
   height: 150px;
   width: 150px;
@@ -333,5 +333,5 @@ header .shadow-box .center-container .main-info a:hover {
 }
 .contact .sub-text {
   font-size: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
