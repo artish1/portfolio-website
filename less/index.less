@@ -1,7 +1,7 @@
 @import "reset";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand:600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Quicksand:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,300&display=swap");
 /*
 FONTS-----
 CURRENTLY NOT IN USE:
@@ -11,130 +11,199 @@ CURRENTLY NOT IN USE:
 @import "animations";
 @import "variables";
 
-body{
-    background-color: #111111;
-    font-family: 'Montserrat', sans-serif;
+body {
+  background-color: #111111;
+  font-family: "Montserrat", sans-serif;
 }
 
 .max-width {
-    margin: 0px 78px;
-    
+  margin: 0px 78px;
 }
 
 header {
-    color: white;
-    font-size: 25px;
-    height: 81vh;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    .nav-box {
-        padding-top: 50px;
+  color: white;
+  font-size: 25px;
+  height: 81vh;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .nav-box {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-family: "Quicksand", sans-serif;
+      font-size: 23px;
+      font-weight: 600;
+    }
+
+    nav {
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 20px;
+
+        &:hover {
+          color: rgba(199, 199, 199, 0.877);
+        }
+      }
+    }
+  }
+
+  .shadow-box {
+    width: 100%;
+    height: 100%;
+    background-color: #11111194;
+
+    .center-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .main-info {
         display: flex;
-        justify-content: space-between;
-        
-        .title {
-            
-             font-family: 'Quicksand', sans-serif;
-            font-size: 23px;
-            font-weight: 600;
+        flex-direction: column;
+        align-items: center;
+        .sub-title {
+          font-size: 25px;
+          margin-top: 15px;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 100;
+          letter-spacing: 6px;
         }
-
-        nav{
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 16px;
-                font-weight: 500;
-                margin-right: 20px;
-            
-                &:hover {
-                    color: rgba(199, 199, 199, 0.877);
-                }
-
-            }
-
-
+        h2 {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 300;
+          font-size: 70px;
+          letter-spacing: 10px;
         }
+        a {
+          margin-top: 30px;
+          text-decoration: none;
+          color: white;
+          width: 300px;
+          height: 50px;
+          border: 2px solid white;
+          border-radius: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background-color: white;
+            color: #111111;
+          }
+        }
+      }
     }
-
-    .shadow-box{
-        width: 100%;
-        height: 100%;
-        background-color: #11111194;
-
-        .center-container {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .main-info {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .sub-title {
-                    font-size: 25px;
-                    margin-top: 15px;
-                    font-family: 'Josefin Sans', sans-serif;
-                    font-weight: 100;
-                    letter-spacing: 6px;
-                }
-                h2 {
-                    font-family: 'Josefin Sans', sans-serif;
-                    font-weight: 300;
-                    font-size: 70px;
-                    letter-spacing: 10px;
-                }
-                a {
-                    margin-top: 30px;
-                    text-decoration: none;
-                    color: white;
-                    width: 300px;
-                    height: 50px;
-                    border: 2px solid white;
-                    border-radius: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    &:hover {
-                        background-color: white;
-                        color: #111111;
-                    }
-                }
-            }
-
-        }
-
-    }
-    
-
+  }
 }
 
-
 .line-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .line-wrapper {
-    height: @scroll-line-height;
+  height: @scroll-line-height;
+  width: 1px;
+  align-self: center;
+  overflow: hidden;
+
+  position: absolute;
+  top: -35px;
+
+  .line {
+    background-color: white;
     width: 1px;
-    align-self: center;
-    overflow: hidden;
+    height: @scroll-line-height;
+    animation: scrollAnim @scroll-line-duration infinite;
+  }
+}
 
-    position: absolute;
-    top: -35px;
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4f4ea;
 
-    .line {
-        background-color: white;
-        width: 1px;
-        height: @scroll-line-height;
-        animation: scrollAnim @scroll-line-duration infinite;
-        
+  h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+  .about-content {
+    .mission-statement {
+      width: 750px;
+      margin-bottom: 50px;
     }
+  }
+}
+
+.text-content {
+  color: #f4f4ea;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.info-container {
+  color: #f4f4ea;
+  width: 100%;
+  min-width: 765px;
+  display: flex;
+  justify-content: space-around;
+  .box {
+    width: 45%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.contact {
+  margin-left: 15px;
+
+  .profile-picture {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    //Filler
+    height: 150px;
+    width: 150px;
+    background-color: #fdfd55d7;
+  }
+
+  .contact-info {
+    margin-bottom: 15px;
+  }
+  .sub-title {
+    font-size: 16px;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    color: #979797d2;
+  }
+
+  .sub-text {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
 }
