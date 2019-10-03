@@ -167,6 +167,9 @@ CURRENTLY NOT IN USE:
     transform: translateY(100%);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #111111;
   font-family: "Montserrat", sans-serif;
@@ -501,7 +504,7 @@ header .shadow-box .center-container .main-info a:hover {
     flex-direction: column;
   }
 }
-.projects-title {
+#projects-title {
   color: #f4f4ea;
   font-size: 45px;
   text-align: center;
