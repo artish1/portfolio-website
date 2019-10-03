@@ -406,7 +406,7 @@ header .shadow-box .center-container .main-info a:hover {
   flex-direction: column;
   align-items: center;
   width: 32%;
-  min-width: 350px;
+  min-width: 325px;
   border-radius: 8px;
   background-color: #292929;
   margin: 20px 0px 20px 0px;
@@ -423,9 +423,13 @@ header .shadow-box .center-container .main-info a:hover {
   color: #f4f4ea;
   font-size: 19px;
 }
+.projects .project ul {
+  margin-left: 10px;
+}
 .projects .project ul li {
   padding-bottom: 20px;
   color: #979797d2;
+  margin-right: 50px;
 }
 .projects .project ul li::before {
   content: "\2022";
