@@ -385,3 +385,85 @@ header .shadow-box .center-container .main-info a:hover {
     margin-left: 0px;
   }
 }
+.projects {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 290px;
+  width: 350px;
+  border-radius: 8px;
+  background-color: #292929;
+  margin: 20px 40px 20px 0px;
+}
+.projects .project h3 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #f4f4ea;
+  font-size: 20px;
+}
+.projects .project .description {
+  color: #979797d2;
+  font-size: 17px;
+  text-align: center;
+  margin: 0px 15px;
+  margin-bottom: 30px;
+}
+.projects .project .stack {
+  font-style: italic;
+  color: #979797d2;
+  font-size: 14px;
+}
+.projects .project .button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+}
+.projects .project .project-link {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 42%;
+  font-size: 22px;
+  color: #2ad36b;
+  border: 1px solid #2ad36b;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.projects .project .project-link:hover {
+  background-color: #2ad36b;
+  color: #111111;
+}
+.projects .project .repo-link {
+  margin-top: 30px;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 42%;
+  color: #2a95d3;
+  border: 1px solid #2a95d3;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.projects .project .repo-link:hover {
+  background-color: #2a95d3;
+  color: white;
+}
+.projects-title {
+  color: #f4f4ea;
+  font-size: 45px;
+  text-align: center;
+}

@@ -12,7 +12,7 @@ CURRENTLY NOT IN USE:
 @import "variables";
 
 body {
-  background-color: #111111;
+  background-color: @background-color;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -89,7 +89,7 @@ header {
         a {
           margin-top: 30px;
           text-decoration: none;
-          color: #f4f4ea;
+          color: @font-color;
           width: 300px;
           height: 50px;
           border: 2px solid #e6f51e;
@@ -138,7 +138,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #f4f4ea;
+  color: @font-color;
 
   h2 {
     font-size: 45px;
@@ -167,7 +167,7 @@ header {
 }
 
 .info-container {
-  color: #f4f4ea;
+  color: @font-color;
   width: 100%;
   min-width: 765px;
   display: flex;
@@ -243,7 +243,7 @@ header {
     padding-bottom: 3px;
     margin-bottom: 2px;
     margin-top: 10px;
-    color: #979797d2;
+    color: @font-off-color;
   }
 
   .sub-text {
@@ -254,4 +254,92 @@ header {
   @media @tablet {
     margin-left: 0px;
   }
+}
+
+.projects {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+    width: 350px;
+    border-radius: 8px;
+    background-color: rgb(41, 41, 41);
+    margin: 20px 40px 20px 0px;
+
+    h3 {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      color: @font-color;
+      font-size: 20px;
+    }
+    .description {
+      color: @font-off-color;
+      font-size: 17px;
+      text-align: center;
+      margin: 0px 15px;
+      margin-bottom: 30px;
+    }
+    .stack {
+      font-style: italic;
+      color: @font-off-color;
+      font-size: 14px;
+    }
+
+    .button-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 55px;
+    }
+    .project-link {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px;
+      width: 42%;
+      font-size: 22px;
+      color: rgb(42, 211, 107);
+      border: 1px solid rgb(42, 211, 107);
+      border-radius: 8px;
+      text-decoration: none;
+      &:hover {
+        background-color: rgb(42, 211, 107);
+        color: #111111;
+      }
+    }
+
+    .repo-link {
+      margin-top: 30px;
+      margin-left: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px;
+      width: 42%;
+      color: rgb(42, 149, 211);
+      border: 1px solid rgb(42, 149, 211);
+      border-radius: 8px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgb(42, 149, 211);
+        color: white;
+      }
+    }
+  }
+}
+
+.projects-title {
+  color: @font-color;
+  font-size: 45px;
+  text-align: center;
 }
