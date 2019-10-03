@@ -84,11 +84,27 @@ header {
           font-weight: 100;
           letter-spacing: 6px;
         }
-        h2 {
+
+        .name {
+          display: flex;
+          text-align: center;
+          @media (max-width: 600px) {
+            flex-direction: column;
+          }
+        }
+
+        .name span {
           font-family: "Josefin Sans", sans-serif;
           font-weight: 300;
           font-size: 70px;
           letter-spacing: 10px;
+          @media (max-width: 756px) {
+            font-size: 50px;
+          }
+        }
+
+        #fname {
+          margin-right: 30px;
         }
         a {
           margin-top: 30px;
@@ -252,7 +268,7 @@ header {
   }
 
   .sub-text {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 25px;
   }
 
@@ -275,7 +291,7 @@ header {
     align-items: center;
     //height: 350px;
     width: 32%;
-    min-width: 325px;
+    //min-width: 300px;
     border-radius: 8px;
     background-color: rgb(41, 41, 41);
     margin: 20px 0px 20px 0px;

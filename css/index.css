@@ -234,11 +234,28 @@ header .shadow-box .center-container .main-info .sub-title {
   font-weight: 100;
   letter-spacing: 6px;
 }
-header .shadow-box .center-container .main-info h2 {
+header .shadow-box .center-container .main-info .name {
+  display: flex;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  header .shadow-box .center-container .main-info .name {
+    flex-direction: column;
+  }
+}
+header .shadow-box .center-container .main-info .name span {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   font-size: 70px;
   letter-spacing: 10px;
+}
+@media (max-width: 756px) {
+  header .shadow-box .center-container .main-info .name span {
+    font-size: 50px;
+  }
+}
+header .shadow-box .center-container .main-info #fname {
+  margin-right: 30px;
 }
 header .shadow-box .center-container .main-info a {
   margin-top: 30px;
@@ -384,7 +401,7 @@ header .shadow-box .center-container .main-info a:hover {
   color: #979797d2;
 }
 .contact .sub-text {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 25px;
 }
 @media (max-width: 850px) {
@@ -406,7 +423,6 @@ header .shadow-box .center-container .main-info a:hover {
   flex-direction: column;
   align-items: center;
   width: 32%;
-  min-width: 325px;
   border-radius: 8px;
   background-color: #292929;
   margin: 20px 0px 20px 0px;
