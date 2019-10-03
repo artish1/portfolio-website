@@ -17,7 +17,7 @@ body {
 }
 
 .max-width {
-  margin: 0px 78px;
+  margin: 0px 80px;
 
   @media @tablet {
     margin: 0px 55px;
@@ -264,15 +264,17 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   .project {
     display: flex;
     flex-direction: column;
     align-items: center;
     //height: 350px;
-    width: 450px;
+    width: 32%;
+    min-width: 350px;
     border-radius: 8px;
     background-color: rgb(41, 41, 41);
-    margin: 20px 40px 20px 0px;
+    margin: 20px 0px 20px 0px;
 
     h2 {
       margin-top: 25px;
@@ -358,10 +360,16 @@ header {
       }
     }
 
+    @media (max-width: 1227px) {
+      width: 100%;
+    }
+
     @media @tablet {
       width: 100%;
-      margin-right: 0px;
     }
+  }
+  @media (max-width: 1227px) {
+    flex-direction: column;
   }
 }
 
