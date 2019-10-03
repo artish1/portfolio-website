@@ -30,33 +30,34 @@ body {
 
 .hamburger {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 4px;
-  height: 20px;
   cursor: pointer;
-  .bar {
+
+  .bar1,
+  .bar2,
+  .bar3 {
     width: 26px;
-    //margin-bottom: 5px;
     height: 2px;
     background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
   }
-
-  .change #bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-
-  .change #bar2 {
-    opacity: 0;
-  }
-
-  .change #bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
   @media @nav-change {
-    display: flex;
+    display: inline-block;
   }
+}
+
+.change .bar1 {
+  //translate(-9px, 6px)
+  transform: rotate(-45deg) translate(0px, 11px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  //translate(-8px, -8px)
+  transform: rotate(45deg) translate(0px, -11px);
 }
 
 header {
@@ -79,6 +80,9 @@ header {
     }
 
     nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       a {
         text-decoration: none;
         color: white;
@@ -93,6 +97,8 @@ header {
 
       @media @nav-change {
         display: none;
+        flex-direction: column;
+        background-color: red;
       }
     }
   }

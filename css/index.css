@@ -184,30 +184,30 @@ body {
 }
 .hamburger {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 4px;
-  height: 20px;
   cursor: pointer;
 }
-.hamburger .bar {
+.hamburger .bar1,
+.hamburger .bar2,
+.hamburger .bar3 {
   width: 26px;
   height: 2px;
   background-color: white;
-}
-.hamburger .change #bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-.hamburger .change #bar2 {
-  opacity: 0;
-}
-.hamburger .change #bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
+  margin: 6px 0;
+  transition: 0.4s;
 }
 @media (max-width: 630px) {
   .hamburger {
-    display: flex;
+    display: inline-block;
   }
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(0px, 11px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(0px, -11px);
 }
 header {
   color: white;
@@ -228,6 +228,11 @@ header .nav-box .title {
   font-size: 23px;
   font-weight: 600;
 }
+header .nav-box nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .nav-box nav a {
   text-decoration: none;
   color: white;
@@ -241,6 +246,8 @@ header .nav-box nav a:hover {
 @media (max-width: 630px) {
   header .nav-box nav {
     display: none;
+    flex-direction: column;
+    background-color: red;
   }
 }
 header .shadow-box {
