@@ -173,7 +173,6 @@ header {
   display: flex;
   justify-content: space-around;
   .box {
-    width: 45%;
     background-color: rgb(41, 41, 41);
     border-radius: 8px;
     display: flex;
@@ -193,6 +192,7 @@ header {
   }
 
   .skills {
+    width: 100%;
     ul {
       display: flex;
       //background-color: rebeccapurple;
@@ -224,19 +224,20 @@ header {
 
 .contact {
   margin-left: 10px;
-
+  width: 500px;
   .profile-picture {
-    margin-top: 35px;
-    margin-bottom: 75px;
     border-radius: 100px;
     //Filler
     height: 150px;
     width: 150px;
-    background-color: #fdfd55d7;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   .contact-info {
     margin-bottom: 15px;
+    margin-right: 25px;
+    margin-left: 25px;
   }
   .sub-title {
     font-size: 16px;
@@ -354,6 +355,11 @@ header {
         background-color: rgb(42, 149, 211);
         color: white;
       }
+    }
+
+    @media @tablet {
+      width: 100%;
+      margin-right: 0px;
     }
   }
 }

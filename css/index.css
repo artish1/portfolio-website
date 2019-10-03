@@ -311,7 +311,6 @@ header .shadow-box .center-container .main-info a:hover {
   justify-content: space-around;
 }
 .info-container .box {
-  width: 45%;
   background-color: #292929;
   border-radius: 8px;
   display: flex;
@@ -328,6 +327,9 @@ header .shadow-box .center-container .main-info a:hover {
     margin-bottom: 25px;
     margin-top: 25px;
   }
+}
+.info-container .skills {
+  width: 100%;
 }
 .info-container .skills ul {
   display: flex;
@@ -357,17 +359,19 @@ header .shadow-box .center-container .main-info a:hover {
 }
 .contact {
   margin-left: 10px;
+  width: 500px;
 }
 .contact .profile-picture {
-  margin-top: 35px;
-  margin-bottom: 75px;
   border-radius: 100px;
   height: 150px;
   width: 150px;
-  background-color: #fdfd55d7;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .contact .contact-info {
   margin-bottom: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 .contact .sub-title {
   font-size: 16px;
@@ -478,6 +482,12 @@ header .shadow-box .center-container .main-info a:hover {
 .projects .project .repo-link:hover {
   background-color: #2a95d3;
   color: white;
+}
+@media (max-width: 850px) {
+  .projects .project {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 .projects-title {
   color: #f4f4ea;
