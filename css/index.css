@@ -356,7 +356,7 @@ header .shadow-box .center-container .main-info a:hover {
   }
 }
 .contact {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .contact .profile-picture {
   margin-top: 35px;
@@ -397,17 +397,33 @@ header .shadow-box .center-container .main-info a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 290px;
-  width: 350px;
+  width: 450px;
   border-radius: 8px;
   background-color: #292929;
   margin: 20px 40px 20px 0px;
 }
-.projects .project h3 {
+.projects .project h2 {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #f4f4ea;
-  font-size: 20px;
+  font-size: 25px;
+}
+.projects .project h3 {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  color: #f4f4ea;
+  font-size: 19px;
+}
+.projects .project ul li {
+  padding-bottom: 20px;
+  color: #979797d2;
+}
+.projects .project ul li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
 }
 .projects .project .description {
   color: #979797d2;
@@ -427,6 +443,7 @@ header .shadow-box .center-container .main-info a:hover {
   align-items: center;
   justify-content: center;
   margin-top: 55px;
+  margin-bottom: 30px;
 }
 .projects .project .project-link {
   margin-top: 30px;
