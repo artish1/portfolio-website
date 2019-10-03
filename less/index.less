@@ -24,7 +24,38 @@ body {
   margin: 0px 80px;
 
   @media @tablet {
-    margin: 0px 55px;
+    margin: 0px 35px;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4px;
+  height: 20px;
+  cursor: pointer;
+  .bar {
+    width: 26px;
+    //margin-bottom: 5px;
+    height: 2px;
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  @media @nav-change {
+    display: flex;
   }
 }
 
@@ -41,7 +72,6 @@ header {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
-
     .title {
       font-family: "Quicksand", sans-serif;
       font-size: 23px;
@@ -59,6 +89,10 @@ header {
         &:hover {
           color: rgba(199, 199, 199, 0.877);
         }
+      }
+
+      @media @nav-change {
+        display: none;
       }
     }
   }

@@ -179,7 +179,34 @@ body {
 }
 @media (max-width: 850px) {
   .max-width {
-    margin: 0px 55px;
+    margin: 0px 35px;
+  }
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4px;
+  height: 20px;
+  cursor: pointer;
+}
+.hamburger .bar {
+  width: 26px;
+  height: 2px;
+  background-color: white;
+}
+.hamburger .change #bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.hamburger .change #bar2 {
+  opacity: 0;
+}
+.hamburger .change #bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+@media (max-width: 630px) {
+  .hamburger {
+    display: flex;
   }
 }
 header {
@@ -210,6 +237,11 @@ header .nav-box nav a {
 }
 header .nav-box nav a:hover {
   color: rgba(199, 199, 199, 0.877);
+}
+@media (max-width: 630px) {
+  header .nav-box nav {
+    display: none;
+  }
 }
 header .shadow-box {
   width: 100%;
