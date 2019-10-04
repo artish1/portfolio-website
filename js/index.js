@@ -1,10 +1,10 @@
 window.addEventListener("load", () => {
   let hamburger = document.querySelector(".hamburger");
+  let nav = document.querySelector("nav");
 
   hamburger.addEventListener("click", () => {
-    console.log("Clicked hamburger icon");
     hamburger.classList.toggle("change");
-  });
 
-  console.log("Loaded?");
+    nav.classList.toggle("nav-open");
+  });
 });

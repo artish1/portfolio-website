@@ -60,6 +60,105 @@ body {
   transform: rotate(45deg) translate(0px, -11px);
 }
 
+.seperator {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media @nav-change {
+    margin-top: 35px;
+  }
+}
+
+.nav-box {
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+  }
+
+  @media @nav-change {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.cont {
+  background-color: #080808da;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @media @nav-change {
+    flex-direction: column;
+  }
+}
+
+.top-container {
+  //padding-top: 50px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media @nav-change {
+    flex-direction: column;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  overflow: hidden;
+
+  @media @tablet {
+    margin-right: 35px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+
+    &:hover {
+      color: rgba(199, 199, 199, 0.877);
+    }
+
+    @media @nav-change {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      border-bottom: 1px solid @font-color;
+      margin: 0px 0px;
+    }
+  }
+
+  @media @nav-change {
+    display: block;
+    flex-direction: column;
+    background-color: #353232;
+    height: 0px;
+    margin-right: 0px;
+  }
+}
+
+.nav-open {
+  height: 100%;
+}
+
 header {
   color: white;
   font-size: 25px;
@@ -68,41 +167,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  .nav-box {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    .title {
-      font-family: "Quicksand", sans-serif;
-      font-size: 23px;
-      font-weight: 600;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 500;
-        margin-right: 20px;
-
-        &:hover {
-          color: rgba(199, 199, 199, 0.877);
-        }
-      }
-
-      @media @nav-change {
-        display: none;
-        flex-direction: column;
-        background-color: red;
-      }
-    }
-  }
-
   .shadow-box {
     width: 100%;
     height: 100%;

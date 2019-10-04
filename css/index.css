@@ -209,6 +209,106 @@ body {
 .change .bar3 {
   transform: rotate(45deg) translate(0px, -11px);
 }
+.seperator {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 630px) {
+  .seperator {
+    margin-top: 35px;
+  }
+}
+.nav-box {
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-box .title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+@media (max-width: 630px) {
+  .nav-box {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.cont {
+  background-color: #080808da;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 630px) {
+  .cont {
+    flex-direction: column;
+  }
+}
+.top-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 630px) {
+  .top-container {
+    flex-direction: column;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  overflow: hidden;
+}
+@media (max-width: 850px) {
+  nav {
+    margin-right: 35px;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+nav a:hover {
+  color: rgba(199, 199, 199, 0.877);
+}
+@media (max-width: 630px) {
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f4f4ea;
+    margin: 0px 0px;
+  }
+}
+@media (max-width: 630px) {
+  nav {
+    display: block;
+    flex-direction: column;
+    background-color: #353232;
+    height: 0px;
+    margin-right: 0px;
+  }
+}
+.nav-open {
+  height: 100%;
+}
 header {
   color: white;
   font-size: 25px;
@@ -217,38 +317,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-header .nav-box {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-header .nav-box .title {
-  font-family: "Quicksand", sans-serif;
-  font-size: 23px;
-  font-weight: 600;
-}
-header .nav-box nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .nav-box nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  margin-right: 20px;
-}
-header .nav-box nav a:hover {
-  color: rgba(199, 199, 199, 0.877);
-}
-@media (max-width: 630px) {
-  header .nav-box nav {
-    display: none;
-    flex-direction: column;
-    background-color: red;
-  }
 }
 header .shadow-box {
   width: 100%;
