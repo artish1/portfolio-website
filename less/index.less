@@ -124,14 +124,25 @@ nav {
     margin-right: 35px;
   }
   a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 500;
     margin-right: 20px;
-
-    &:hover {
-      color: rgba(199, 199, 199, 0.877);
+    margin-top: 20px;
+    &:after {
+      content: "";
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      height: 2px;
+      width: 0px;
+      background-color: @font-color;
+      transition: width 0.22s ease;
+    }
+    &:hover:after {
+      width: 96%;
     }
 
     @media @nav-change {
@@ -140,8 +151,6 @@ nav {
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px;
-
-      border-bottom: 1px solid @font-color;
       margin: 0px 0px;
     }
   }

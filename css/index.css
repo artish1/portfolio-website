@@ -277,14 +277,26 @@ nav {
   }
 }
 nav a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
   margin-right: 20px;
+  margin-top: 20px;
 }
-nav a:hover {
-  color: rgba(199, 199, 199, 0.877);
+nav a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  height: 2px;
+  width: 0px;
+  background-color: #f4f4ea;
+  transition: width 0.22s ease;
+}
+nav a:hover:after {
+  width: 96%;
 }
 @media (max-width: 630px) {
   nav a {
@@ -293,7 +305,6 @@ nav a:hover {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #f4f4ea;
     margin: 0px 0px;
   }
 }
