@@ -471,8 +471,8 @@ header .shadow-box .center-container .main-info a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .info-container .skills ul li p {
   margin-top: 10px;
