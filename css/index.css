@@ -499,6 +499,9 @@ header .shadow-box .center-container .main-info a:hover {
   margin-right: 25px;
   margin-left: 25px;
 }
+.contact .contact-info p:last-child {
+  margin-bottom: 0px;
+}
 .contact .sub-title {
   font-size: 16px;
   padding-bottom: 3px;
@@ -634,4 +637,21 @@ header .shadow-box .center-container .main-info a:hover {
   color: #f4f4ea;
   font-size: 45px;
   text-align: center;
+}
+.artifacts {
+  margin-bottom: 25px;
+}
+.artifacts a {
+  text-decoration: none;
+  color: #d6374d;
+  margin-right: 60px;
+}
+.artifacts a:hover {
+  color: #7e221a;
+}
+.artifacts a:last-child {
+  margin-right: 0px;
+}
+.artifacts .artifact:before {
+  font-size: 35px;
 }

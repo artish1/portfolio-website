@@ -361,6 +361,10 @@ header {
     margin-right: 25px;
     margin-left: 25px;
   }
+  .contact-info p:last-child {
+    margin-bottom: 0px;
+  }
+
   .sub-title {
     font-size: 16px;
     padding-bottom: 3px;
@@ -500,4 +504,24 @@ header {
   color: @font-color;
   font-size: 45px;
   text-align: center;
+}
+
+.artifacts {
+  margin-bottom: 25px;
+  a {
+    text-decoration: none;
+    color: rgb(214, 55, 77);
+    margin-right: 60px;
+
+    &:hover {
+      color: #7e221a;
+    }
+  }
+  a:last-child {
+    margin-right: 0px;
+  }
+
+  .artifact:before {
+    font-size: 35px;
+  }
 }
