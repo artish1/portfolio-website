@@ -393,23 +393,28 @@ header {
 }
 
 .projects {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  /*
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  */
   .project {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 450px;
-    width: 32%;
+    //width: 32%;
     //min-width: 300px;
     border-radius: 8px;
     background-color: rgb(41, 41, 41);
-    margin: 20px 0px 20px 0px;
+    //margin: 20px 0px 20px 0px;
 
     h2 {
       margin-top: 25px;
@@ -504,8 +509,16 @@ header {
       width: 100%;
     }
   }
-  @media (max-width: 1227px) {
-    flex-direction: column;
+  // @media (max-width: 1227px) {
+  //   flex-direction: column;
+  // }
+
+  @media (max-width: 1090px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
 

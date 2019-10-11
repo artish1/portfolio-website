@@ -530,23 +530,26 @@ header .shadow-box .center-container .main-info a:hover {
   }
 }
 .projects {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  /*
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  */
 }
 .projects .project {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 450px;
-  width: 32%;
   border-radius: 8px;
   background-color: #292929;
-  margin: 20px 0px 20px 0px;
 }
 .projects .project h2 {
   margin-top: 25px;
@@ -639,9 +642,14 @@ header .shadow-box .center-container .main-info a:hover {
     width: 100%;
   }
 }
-@media (max-width: 1227px) {
+@media (max-width: 1090px) {
   .projects {
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 #projects-title {
