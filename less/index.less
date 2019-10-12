@@ -7,9 +7,10 @@ FONTS-----
 CURRENTLY NOT IN USE:
 -Raleway:300
 */
-
 @import "animations";
 @import "variables";
+
+@import "mixins";
 
 html {
   scroll-behavior: smooth;
@@ -467,39 +468,13 @@ header {
       margin-bottom: 30px;
     }
     .project-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 44px;
-      width: 42%;
+      .button-dimensions(@visit-button-color, @visit-button-hover);
       font-size: 22px;
-      color: white;
-      border: 1px solid @visit-button-color;
-      background-color: @visit-button-color;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.31s ease;
-      &:hover {
-        background-color: @visit-button-hover;
-      }
     }
 
     .repo-link {
       margin-left: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 44px;
-      width: 42%;
-      color: white;
-      border: 1px solid @github-button-color;
-      background-color: @github-button-color;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.31s ease;
-      &:hover {
-        background-color: @github-button-hover;
-      }
+      .button-dimensions(@github-button-color, @github-button-hover);
     }
 
     @media (max-width: 1227px) {

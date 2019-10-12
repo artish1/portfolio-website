@@ -449,7 +449,7 @@ header .shadow-box .center-container .main-info a:hover {
   justify-content: space-around;
 }
 .info-container .box {
-  background-color: #333131;
+  background-color: #292828;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -518,7 +518,7 @@ header .shadow-box .center-container .main-info a:hover {
   padding-bottom: 3px;
   margin-bottom: 2px;
   margin-top: 10px;
-  color: #d3ceced2;
+  color: #e7deded2;
 }
 .contact .sub-text {
   font-size: 20px;
@@ -549,7 +549,7 @@ header .shadow-box .center-container .main-info a:hover {
   align-items: center;
   height: 450px;
   border-radius: 8px;
-  background-color: #333131;
+  background-color: #292828;
 }
 .projects .project h2 {
   margin-top: 25px;
@@ -569,7 +569,7 @@ header .shadow-box .center-container .main-info a:hover {
 }
 .projects .project ul li {
   padding-bottom: 20px;
-  color: #d3ceced2;
+  color: #e7deded2;
   margin-right: 25px;
 }
 .projects .project ul li::before {
@@ -580,7 +580,7 @@ header .shadow-box .center-container .main-info a:hover {
   width: 20px;
 }
 .projects .project .description {
-  color: #d3ceced2;
+  color: #e7deded2;
   font-size: 17px;
   text-align: center;
   margin: 0px 15px;
@@ -588,7 +588,7 @@ header .shadow-box .center-container .main-info a:hover {
 }
 .projects .project .stack {
   font-style: italic;
-  color: #d3ceced2;
+  color: #e7deded2;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -606,16 +606,15 @@ header .shadow-box .center-container .main-info a:hover {
   justify-content: center;
   height: 44px;
   width: 42%;
-  font-size: 22px;
-  color: white;
-  border: 1px solid #3c5ef5;
-  background-color: #3c5ef5;
   border-radius: 8px;
   text-decoration: none;
+  color: white;
   transition: background-color 0.31s ease;
+  background-color: #3c5ef5;
+  font-size: 22px;
 }
 .projects .project .project-link:hover {
-  background-color: #314fd4;
+  background-color: #2a49cf;
 }
 .projects .project .repo-link {
   margin-left: 12px;
@@ -624,15 +623,14 @@ header .shadow-box .center-container .main-info a:hover {
   justify-content: center;
   height: 44px;
   width: 42%;
-  color: white;
-  border: 1px solid #5a6469;
-  background-color: #5a6469;
   border-radius: 8px;
   text-decoration: none;
+  color: white;
   transition: background-color 0.31s ease;
+  background-color: #5a6469;
 }
 .projects .project .repo-link:hover {
-  background-color: #43494d;
+  background-color: #2892d4;
 }
 @media (max-width: 1227px) {
   .projects .project {

@@ -1,0 +1,15 @@
+.button-dimensions(@bgcolor, @bg-hover) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 42%;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.31s ease;
+  background-color: @bgcolor;
+  &:hover {
+    background-color: @bg-hover;
+  }
+}
