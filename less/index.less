@@ -306,7 +306,7 @@ header {
   display: flex;
   justify-content: space-around;
   .box {
-    background-color: rgb(41, 41, 41);
+    background-color: @box-color;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -413,7 +413,7 @@ header {
     //width: 32%;
     //min-width: 300px;
     border-radius: 8px;
-    background-color: rgb(41, 41, 41);
+    background-color: @projects-background-color;
     //margin: 20px 0px 20px 0px;
 
     h2 {
@@ -473,13 +473,14 @@ header {
       height: 44px;
       width: 42%;
       font-size: 22px;
-      color: rgb(42, 211, 107);
-      border: 1px solid rgb(42, 211, 107);
+      color: white;
+      border: 1px solid @visit-button-color;
+      background-color: @visit-button-color;
       border-radius: 8px;
       text-decoration: none;
+      transition: background-color 0.31s ease;
       &:hover {
-        background-color: rgb(42, 211, 107);
-        color: #111111;
+        background-color: @visit-button-hover;
       }
     }
 
@@ -490,14 +491,14 @@ header {
       justify-content: center;
       height: 44px;
       width: 42%;
-      color: rgb(42, 149, 211);
-      border: 1px solid rgb(42, 149, 211);
+      color: white;
+      border: 1px solid @github-button-color;
+      background-color: @github-button-color;
       border-radius: 8px;
       text-decoration: none;
-
+      transition: background-color 0.31s ease;
       &:hover {
-        background-color: rgb(42, 149, 211);
-        color: white;
+        background-color: @github-button-hover;
       }
     }
 
