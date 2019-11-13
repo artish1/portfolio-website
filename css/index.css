@@ -138,7 +138,7 @@ table {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quicksand/v15/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkCEv58a-xw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/quicksand/v19/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkCEv58a-xw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Josefin Sans';
@@ -316,6 +316,9 @@ nav a:hover:after {
     height: 0px;
     margin-right: 0px;
   }
+}
+li a {
+  color: #10e6e6;
 }
 .nav-open {
   height: 100%;
